@@ -23,11 +23,11 @@ sudo ./add-node.sh --ip <NODE_IP> --name <NODE_NAME>
 ### Пример
 
 ```bash
-# На ноде vk7:
+# На ноде example:
 sudo ./ne-install.sh --prometheus-ip 193.39.208.155
 
 # На сервере мониторинга:
-sudo ./add-node.sh --ip 37.139.33.63 --name vk7
+sudo ./add-node.sh --ip 37.139.33.63 --name example
 ```
 
 ## 📋 Что делает скрипт
@@ -76,12 +76,12 @@ sudo ./ne-install.sh -p 193.39.208.155
 sudo ./ne-install.sh -p 193.39.208.155 -P 9100 -n my-vpn-node
 
 # Полная кастомизация
-sudo ./ne-install.sh --prometheus-ip 10.0.0.1 --port 9100 --hostname vk7 --node-ip 37.139.33.63
+sudo ./ne-install.sh --prometheus-ip 10.0.0.1 --port 9100 --hostname example --node-ip 37.139.33.63
 
 # === На сервере мониторинга ===
 
 # Добавить ноду
-sudo ./add-node.sh --ip 37.139.33.63 --name vk7
+sudo ./add-node.sh --ip 37.139.33.63 --name example
 
 # Список всех таргетов с проверкой
 sudo ./add-node.sh --list
